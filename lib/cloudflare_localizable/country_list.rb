@@ -1,3 +1,4 @@
+# coding: utf-8
 module CloudFlareLocalizable
   # Countries
   CF_COUNTRIES = [
