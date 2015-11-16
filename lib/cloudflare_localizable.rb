@@ -1,8 +1,9 @@
 require 'cloudflare_localizable/version'
 require 'cloudflare_localizable/country'
 
-# This module can be included in any Rails controller that needs country information. You get a
-# helper method called cf_country to be used whenever you need to know the country of the user.
+# This module can be included in any Rails controller that needs country
+# information. You get a helper method called cf_country to be used whenever you
+# need to know the country of the user.
 #
 # === Example
 #

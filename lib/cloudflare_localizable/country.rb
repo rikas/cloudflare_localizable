@@ -5,7 +5,7 @@ module CloudFlareLocalizable
     attr_accessor :name, :code
 
     def self.find(code:)
-      record = CF_COUNTRIES.select { |country| country[:code] == code }.first
+      record = CF_COUNTRIES.find { |country| country[:code] == code }
 
       new(record[:code], record[:name])
     end

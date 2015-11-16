@@ -5,10 +5,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cloudflare_localizable/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cloudflare_localizable"
+  spec.name          = 'cloudflare_localizable'
   spec.version       = CloudFlareLocalizable::VERSION
-  spec.authors       = ["Ricardo Otero"]
-  spec.email         = ["oterosantos@gmail.com"]
+  spec.authors       = ['Ricardo Otero']
+  spec.email         = ['oterosantos@gmail.com']
 
   spec.summary       = 'Localize your requests with CloudFlare.'
   spec.description   = "If you're using CloudFlare you can easily get the location of your requests
@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', "~> 1.10"
-  spec.add_development_dependency 'rake', "~> 10.0"
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'actionpack'
+  spec.add_development_dependency 'bundler', '~> 1.10'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rspec', '~> 3.4.0'
+  spec.add_development_dependency 'actionpack', '~> 4.2.5'
 end
