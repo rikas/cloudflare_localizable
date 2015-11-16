@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rikas/cloudflare_localizable.svg?branch=master)](https://travis-ci.org/rikas/cloudflare_localizable)
+
 # CloudFlareLocalizable
 
 If you're using [CloudFlare](https://www.cloudflare.com/) you can easily get the country
