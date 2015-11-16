@@ -1,8 +1,7 @@
 # CloudflareLocalizable
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cloudflare_localizable`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+If you're using CloudFlare you can easily get the country information of users requesting your
+application. Just include CloudflareLocalizable in your controller.
 
 ## Installation
 
@@ -22,7 +21,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You should include `CloudflareLocalizable` in any Rails controller that needs country information.
+You get a helper method called `cf_country` to be used whenever you need to know the country of the
+user.
+
+```ruby
+class ExampleController < ApplicationController
+  include CloudflareLocalizable
+
+  def index
+    cf_country.code # => "BB"
+    cf_country.name # => "Barbados"
+  end
+end
+```
 
 ## Development
 
@@ -38,4 +50,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
