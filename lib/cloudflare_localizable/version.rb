@@ -1,3 +1,3 @@
-module CloudflareLocalizable
+module CloudFlareLocalizable
   VERSION = '0.1.0'
 end

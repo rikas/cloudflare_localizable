@@ -1,4 +1,4 @@
-module CloudflareLocalizable
+module CloudFlareLocalizable
   # Countries
   CF_COUNTRIES = [
     { code: 'AD', name: 'Andorra' },

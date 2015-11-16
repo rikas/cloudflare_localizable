@@ -1,6 +1,6 @@
 require 'cloudflare_localizable/country_list'
 
-module CloudflareLocalizable
+module CloudFlareLocalizable
   class Country
     attr_accessor :name, :code
 

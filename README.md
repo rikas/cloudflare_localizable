@@ -1,7 +1,7 @@
-# CloudflareLocalizable
+# CloudFlareLocalizable
 
 If you're using CloudFlare you can easily get the country information of users requesting your
-application. Just include CloudflareLocalizable in your controller.
+application. Just include CloudFlareLocalizable in your controller.
 
 ## Installation
 
@@ -21,13 +21,13 @@ Or install it yourself as:
 
 ## Usage
 
-You should include `CloudflareLocalizable` in any Rails controller that needs country information.
+You should include `CloudFlareLocalizable` in any Rails controller that needs country information.
 You get a helper method called `cf_country` to be used whenever you need to know the country of the
 user.
 
 ```ruby
 class ExampleController < ApplicationController
-  include CloudflareLocalizable
+  include CloudFlareLocalizable
 
   def index
     cf_country.code # => "BB"

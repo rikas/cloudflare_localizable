@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe CloudflareLocalizable do
+describe CloudFlareLocalizable do
   it 'has a version number' do
-    expect(CloudflareLocalizable::VERSION).not_to be nil
+    expect(CloudFlareLocalizable::VERSION).not_to be nil
   end
 
   it 'does something useful' do

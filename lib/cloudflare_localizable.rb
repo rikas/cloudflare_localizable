@@ -7,14 +7,14 @@ require 'cloudflare_localizable/country'
 # === Example
 #
 #   class ExampleController < ApplicationController
-#     include CloudflareLocalizable
+#     include CloudFlareLocalizable
 #
 #     def index
 #       cf_country.code # => "BB"
 #       cf_country.name # => "Barbados"
 #     end
 #   end
-module CloudflareLocalizable
+module CloudFlareLocalizable
   CF_HEADER = 'HTTP_CF_IPCOUNTRY'.freeze
 
   def self.included(base)

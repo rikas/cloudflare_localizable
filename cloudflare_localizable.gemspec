@@ -5,7 +5,7 @@ require 'cloudflare_localizable/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "cloudflare_localizable"
-  spec.version       = CloudflareLocalizable::VERSION
+  spec.version       = CloudFlareLocalizable::VERSION
   spec.authors       = ["Ricardo Otero"]
   spec.email         = ["oterosantos@gmail.com"]
 
