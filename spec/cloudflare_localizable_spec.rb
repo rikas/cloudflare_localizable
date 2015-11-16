@@ -4,7 +4,7 @@ describe CloudFlareLocalizable do
   class MockController < ActionController::Base
     include CloudFlareLocalizable
 
-    def initialize(country_code: nil)
+    def initialize(country_code = nil)
       @country_code = country_code
     end
 
@@ -32,19 +32,19 @@ describe CloudFlareLocalizable do
   end
 
   it 'returns Unknown country if the country code is "XX"' do
-    controller = MockController.new(country_code: 'XX')
+    controller = MockController.new('XX')
 
     expect(controller.cf_country.name).to eq('Unknown')
     expect(controller.cf_country.code).to eq('XX')
   end
 
   it 'returns the correct country information' do
-    controller = MockController.new(country_code: 'BB')
+    controller = MockController.new('BB')
 
     expect(controller.cf_country.name).to eq('Barbados')
     expect(controller.cf_country.code).to eq('BB')
 
-    controller = MockController.new(country_code: 'PT')
+    controller = MockController.new('PT')
 
     expect(controller.cf_country.name).to eq('Portugal')
     expect(controller.cf_country.code).to eq('PT')
