@@ -24,6 +24,6 @@ module CloudFlareLocalizable
 
   # Returns the real name of the country, based on the country code.
   def cf_country
-    @_cf_country ||= Country.find(code: request.headers[CF_HEADER] || 'XX')
+    @_cf_country ||= Country.find(request.headers[CF_HEADER] || 'XX')
   end
 end
