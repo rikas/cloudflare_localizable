@@ -8,3 +8,6 @@ Metrics/BlockLength:
 Metrics/ModuleLength:
   Exclude:
     - lib/cloudflare_localizable/country_list.rb
+
+Style/ExpandPathArguments:
+  Enabled: false
