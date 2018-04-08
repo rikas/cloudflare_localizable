@@ -1,4 +1,5 @@
-# coding: utf-8
+# frozen_string_literal: true
+
 module CloudFlareLocalizable
   # Countries
   CF_COUNTRIES = [
@@ -252,5 +253,5 @@ module CloudFlareLocalizable
     { code: 'ZM', name: 'Zambia' },
     { code: 'ZW', name: 'Zimbabwe' },
     { code: 'XX', name: 'Unknown' }
-  ]
+  ].freeze
 end

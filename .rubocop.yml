@@ -1,0 +1,10 @@
+Metrics/LineLength:
+  Max: 100
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/*
+
+Metrics/ModuleLength:
+  Exclude:
+    - lib/cloudflare_localizable/country_list.rb

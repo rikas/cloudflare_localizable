@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require 'cloudflare_localizable/version'
 require 'cloudflare_localizable/country'
 
-# This module can be included in any Rails controller that needs country
-# information. You get a helper method called cf_country to be used whenever you
-# need to know the country of the user.
+# This module can be included in any Rails controller that needs country information. You get a
+# helper method called cf_country to be used whenever you need to know the country of the user.
 #
 # === Example
 #
@@ -16,7 +17,7 @@ require 'cloudflare_localizable/country'
 #     end
 #   end
 module CloudFlareLocalizable
-  CF_HEADER = 'HTTP_CF_IPCOUNTRY'.freeze
+  CF_HEADER = 'HTTP_CF_IPCOUNTRY'
 
   def self.included(base)
     base.send(:helper_method, :cf_country)
@@ -24,6 +25,6 @@ module CloudFlareLocalizable
 
   # Returns the real name of the country, based on the country code.
   def cf_country
-    @_cf_country ||= Country.find(request.headers[CF_HEADER] || 'XX')
+    @cf_country ||= Country.find(request.headers[CF_HEADER] || 'XX')
   end
 end

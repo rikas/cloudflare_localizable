@@ -1,4 +1,4 @@
-require 'spec_helper'
+# frozen_string_literal: true
 
 describe CloudFlareLocalizable do
   class MockController < ActionController::Base
@@ -10,7 +10,7 @@ describe CloudFlareLocalizable do
 
     def request
       headers = {}
-      headers.merge!('HTTP_CF_IPCOUNTRY' => @country_code) if @country_code
+      headers['HTTP_CF_IPCOUNTRY'] = @country_code if @country_code
 
       OpenStruct.new(headers: headers)
     end
